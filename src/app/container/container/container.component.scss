@@ -1,0 +1,15 @@
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+}
+
+.container {
+  background-color: hsl(0deg, 0%, 100%);
+  width: 28.75rem;
+  padding: 2.5rem 3.75rem;
+  border-radius: 1rem;
+  display: block;
+}
