@@ -481,11 +481,11 @@ export class AuthorComponent {
   ];
 
   public colors: string[] = [
-    'red',
-    'blue',
-    'gray',
-    'purple',
-    ' rgb(180, 104, 172)',
+    '#8B0000',
+    '#00008B',
+    '#696969',
+    '#9400D3',
+    '#FF1493',
   ];
   public colorActual = '';
   public quotesActual =
@@ -493,12 +493,11 @@ export class AuthorComponent {
   public authorActual = 'Kevin Kruse';
 
   public cambiarContexto(): void {
+    let contador: number = Math.floor(Math.random() * this.quotes.length);
     this.colorActual =
       this.colors[Math.floor(Math.random() * this.colors.length)];
-    this.quotesActual =
-      this.quotes[Math.floor(Math.random() * this.colors.length)].quote;
+    this.quotesActual = this.quotes[contador].quote;
 
-    this.authorActual =
-      this.quotes[Math.floor(Math.random() * this.colors.length)].author;
+    this.authorActual = this.quotes[contador].author;
   }
 }
