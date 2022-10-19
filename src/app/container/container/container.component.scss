@@ -3,7 +3,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: red;
+  background-color: var(--color-pricipal);
 }
 
 .container {
@@ -12,4 +12,21 @@ main {
   padding: 2.5rem 3.75rem;
   border-radius: 1rem;
   display: block;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btnfooter {
+  background-color: var(--color-pricipal);
+  display: flex;
+  border-radius: 0.4rem;
+  button {
+    background-color: var(--color-pricipal);
+    border-radius: 0.4rem;
+    border: none;
+    color: hsl(0deg, 0%, 94%);
+  }
 }
